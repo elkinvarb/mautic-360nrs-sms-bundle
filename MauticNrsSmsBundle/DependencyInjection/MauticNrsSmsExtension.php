@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+
+namespace MauticPlugin\MauticNrsSmsBundle\DependencyInjection;
+
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Extension\Extension;
+use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
+
+/**
+ * Extension class for loading the plugin's service definitions.
+ */
+class MauticNrsSmsExtension extends Extension
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function load(array $configs, ContainerBuilder $container): void
+    {
+        $loader = new PhpFileLoader($container, new FileLocator(__DIR__.'/../Config'));
+        $loader->load('services.php');
+    }
+}
