@@ -4,6 +4,8 @@ Description: A short paragraph explaining what it does.
 
 Compatibility: State that it's compatible with Mautic 6+.
 
+Created with use of IA Gemini and all code SmsBundle of Mautic.
+
 Installation Steps:
 
 Download the latest release as a ZIP file.
@@ -25,3 +27,5 @@ Under the "Credentials" tab, enter your 360NRS API Token (just the token, withou
 Under the "Features" tab, enter the "From Name/Number" you want to use.
 
 Save and close.
+
+For this version, to see the Channel "Text Messages", you need activate Twillio Plugin, isn't necessary insert real credentials.
