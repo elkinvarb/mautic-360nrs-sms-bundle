@@ -1,0 +1,18 @@
+{
+    "name": "mautic-bundles/nrs-sms-bundle",
+    "description": "Adds 360NRS as an SMS transport for Mautic.",
+    "type": "mautic-plugin",
+    "keywords": [
+        "mautic",
+        "plugin",
+        "sms",
+        "360nrs"
+    ],
+    "extra": {
+        "install-directory-name": "MauticNrsSmsBundle"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "mautic/core-lib": "^6.0"
+    }
+}
